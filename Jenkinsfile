@@ -24,8 +24,6 @@ node
     {
       sh 'git add .'
       sh 'git commit -m comitted'
-       withCredentials([usernameColonPassword(credentialsId: 'e71d86df-0a12-4ef9-b416-277f6818abfe', variable: 'gandeevboddeti')]) {
-        sh 'git push origin master' 
-       }
+      sh 'git push origin master' 
     }
 }
