@@ -24,6 +24,6 @@ node
     {
       sh 'git add .'
       sh 'git commit -m comitted'
-      sh 'git remote add origin https://github.com/GandeevBoddeti/Retina.git'
+      sh 'git remote origin https://github.com/GandeevBoddeti/Retina.git'
     }
 }
