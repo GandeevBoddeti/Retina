@@ -24,6 +24,6 @@ node
     {
       sh 'git add .'
       sh 'git commit -m comitted'
-      sh 'git remote origin master'
+      sh 'git origin master'
     }
 }
