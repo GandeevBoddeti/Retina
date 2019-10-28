@@ -27,5 +27,4 @@ node
         sh 'git commit -m 'Initial Commit''
         sh 'git push -u origin master'
     }
-    }
 }
