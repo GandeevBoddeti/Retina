@@ -22,11 +22,10 @@ node
     }
     stage('Commit to the GitHub')
     {
-    
-      sh 'git add .'
-      sh 'git commit -m comitted'
-    withCredentials([usernamePassword(credentialsId: 'e71d86df-0a12-4ef9-b416-277f6818abfe', passwordVariable: 'retina', usernameVariable: 'gandeevboddeti')]) {    
-      sh 'git push origin master'
-	}
+       sh 'git init'
+        sh 'git add .'
+        sh 'git commit -m 'Initial Commit''
+        sh 'git push -u origin master'
+    }
     }
 }
