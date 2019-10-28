@@ -24,7 +24,7 @@ node
     {
        sh 'git init'
         sh 'git add .'
-        sh 'git commit -m 'Initial Commit''
+        sh 'git commit -m "Initial Commit"'
         sh 'git push -u origin master'
     }
 }
