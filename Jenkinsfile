@@ -22,9 +22,9 @@ node
     }
     stage('Commit to the GitHub')
     {
-          git init
-          git add .
-          git commit -m 'Initial Commit'
-          git push -u origin master
+        sh 'git init'
+        sh  'git add .'
+        sh 'git commit -m "Initial Commit"'
+        sh 'git push -u origin master'
     }
 }
