@@ -22,6 +22,8 @@ node
     }
     stage('Commit to the GitHub')
     {
+	    checkout([$class: 'GitSCM', branches: [[name: '*/master']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[credentialsId: 'e71d86df-0a12-4ef9-b416-277f6818abfe', url: 'https://github.com/GandeevBoddeti/Retina.git']]]) 
+	}
         sh  'git add .'
         sh 'git commit -m "Initial Commit"'
         sh 'git push -u origin master'
